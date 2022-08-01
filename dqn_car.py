@@ -28,13 +28,13 @@ env = DummyVecEnv(
 model = DQN(
     "MultiInputPolicy",
     env,
-    learning_rate=0.00025, #0.00025
+    learning_rate=0.025, #0.00025
     verbose=1,
-    batch_size=32,
-    train_freq=4,
-    target_update_interval=10000,
-    learning_starts=200000,
-    buffer_size=500000,
+    batch_size=10,
+    train_freq=(10, "episode"),
+    target_update_interval=200,
+    learning_starts=100,
+    buffer_size=500,
     max_grad_norm=10,
     exploration_fraction=0.1,
     exploration_final_eps=0.01,
@@ -50,7 +50,7 @@ eval_callback = EvalCallback(
     n_eval_episodes=5,
     best_model_save_path=".",
     log_path=".",
-    eval_freq=10000, # 10000
+    eval_freq=1000, # 10000
 )
 callbacks.append(eval_callback)
 
