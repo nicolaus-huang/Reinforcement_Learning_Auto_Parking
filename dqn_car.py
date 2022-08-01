@@ -15,19 +15,18 @@ env = DummyVecEnv(
         lambda: Monitor(
             gym.make(
                 "airgym:airsim-car-sample-v0",
-                ip_address="127.0.0.1",
-                image_shape=(84, 84, 1),
+                ip_address="127.0.0.1"
             )
         )
     ]
 )
 
 # Wrap env as VecTransposeImage to allow SB to handle frame observations
-env = VecTransposeImage(env)
+# env = VecTransposeImage(env)
 
 # Initialize RL algorithm type and parameters
 model = DQN(
-    "CnnPolicy",
+    "MultiInputPolicy",
     env,
     learning_rate=0.00025, #0.00025
     verbose=1,
