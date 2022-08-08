@@ -1,4 +1,7 @@
-__pycache__/
-airgym/__pycache__/
-airgym/envs/__pycache__/
-tb_logs/
+Airsim/__pycache__/
+Airsim/airgym/__pycache__/
+Airsim/airgym/envs/__pycache__/
+Airsim/tb_logs/
+Webots/log/
+Webots/__pycache__/
+Webots/.idea/
