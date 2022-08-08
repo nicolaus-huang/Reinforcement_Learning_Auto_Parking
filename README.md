@@ -8,13 +8,13 @@ We have deployed our model on **2 different environments** to validate its super
 
 ### Quick Start
 
-1. download the Neighborhood4 Environment ( modified from [swri-robotics/Neighborhood](https://github.com/swri-robotics/Neighborhood) )
+1. download the Neighborhood4 Environment from the release ( modified from [swri-robotics/Neighborhood](https://github.com/swri-robotics/Neighborhood) )
 
 2. unzip the environment
 
 3. run the Unreal Engine generated .exe file in the environment package
 
-4. clone this repository and execute the evaluation by 
+4. clone this repository and cd into the Airsim directory then execute the evaluation by 
 
    ```shell
    python eval.py
