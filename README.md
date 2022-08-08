@@ -23,23 +23,18 @@ We have deployed our model on **2 different environments** to validate its super
 ### Methods
 
 We train an agent by setting a reward function by
-$$
-Q = reward_{distance} + reward_{orientation} + reward_{steering}
-$$
+
+![image-20220808191559048](https://s2.loli.net/2022/08/08/lo46cOyn8LjbPUs.png)
+
 where the reward are calculated as follows respectively
-$$
-\begin{align}
-&reward_{distance} = \lambda_{distance} * e^{- \beta * \delta_{distance}}\\\\
-&reward_{orientation} = \lambda_{orientation} * e^{- \alpha * \delta_{orientation} }\\\\
-&reward_{steering} = - \lambda_{steering} * \delta_{steering}
-\end{align}
-$$
+
+![image-20220808191658029](https://s2.loli.net/2022/08/08/5NOvxcZRfakndIQ.png)
 
 > And we add some special reward when something bad happened such as collision and drive out of our bounded area or total time out
 
 The reward function can be viewed like this
 
-![Figure_1](https://s2.loli.net/2022/08/08/vDobV6r24adlTqn.png)
+![figure](https://s2.loli.net/2022/08/08/lGfXLVu6N3UdeFm.png)
 
 We defined **11 kinds** of actions of our car, which can be illustrated mainly by the figure below
 
