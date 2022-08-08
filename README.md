@@ -20,6 +20,16 @@ We have deployed our model on **2 different environments** to validate its super
    python eval.py
    ```
 
+### Training
+
+follow the instructions before, train the model by
+
+```
+python dqn_car.py
+```
+
+
+
 ### Methods
 
 We train an agent by setting a reward function by
@@ -58,7 +68,7 @@ There are possibilities using CNN and a backward camera on the car to train a mo
 
 ## Webots Environment
 
-
+See this method in [Webots ](https://github.com/Huang-Shijie-SDUWH/Reinforcement_Learning_Auto_Parking/tree/master/Webots) directory
 
 ## Real World Deployment
 
