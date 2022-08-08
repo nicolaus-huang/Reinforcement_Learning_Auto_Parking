@@ -28,18 +28,19 @@ env = DummyVecEnv(
 model = DQN(
     "MultiInputPolicy",
     env,
-    learning_rate=0.025, #0.00025
+    learning_rate=0.00025, #0.00025
     verbose=1,
-    batch_size=10,
-    train_freq=(10, "episode"),
-    target_update_interval=200,
-    learning_starts=100,
-    buffer_size=500,
+    batch_size=32,
+    train_freq=4,
+    target_update_interval=10000,
+    learning_starts=20000,
+    buffer_size=50000,
     max_grad_norm=10,
     exploration_fraction=0.1,
     exploration_final_eps=0.01,
     device="cuda",
     tensorboard_log="./tb_logs/",
+
 )
 
 # Create an evaluation callback with the same env, called every 10000 iterations
@@ -50,7 +51,7 @@ eval_callback = EvalCallback(
     n_eval_episodes=5,
     best_model_save_path=".",
     log_path=".",
-    eval_freq=1000, # 10000
+    eval_freq=10000, # 10000
 )
 callbacks.append(eval_callback)
 
@@ -59,7 +60,7 @@ kwargs["callback"] = callbacks
 
 # Train for a certain number of timesteps
 model.learn(
-    total_timesteps=5e5, tb_log_name="dqn_airsim_car_run_" + str(time.time()), **kwargs # 5e5
+    total_timesteps=7e4, tb_log_name="dqn_airsim_car_run_" + time.strftime("%Y_%m_%d_%H_%M_%S", time.localtime()), **kwargs # 5e5
 )
 
 # Save policy weights
