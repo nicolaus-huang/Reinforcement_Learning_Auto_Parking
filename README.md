@@ -1,4 +1,4 @@
-# Auto Parking using DQN with [Webots](https://www.cyberbotics.com/) & [Airsim ]([microsoft.github.io](https://microsoft.github.io/AirSim/)) simulator
+# Auto Parking using DQN with [Webots](https://www.cyberbotics.com/) & [Airsim](https://microsoft.github.io/AirSim/) simulator
 
 This is an simple implementation of auto-parking using **reinforcement learning** methods with GPS and Lidar sensors.
 
