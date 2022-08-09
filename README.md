@@ -12,7 +12,7 @@ See this method in [Webots ](https://github.com/Huang-Shijie-SDUWH/Reinforcement
 
 ### Quick Start
 
-1. download the Neighborhood4 Environment from the release ( modified from [swri-robotics/Neighborhood](https://github.com/swri-robotics/Neighborhood) )
+1. download the [Neighborhood4](https://github.com/Huang-Shijie-SDUWH/Reinforcement_Learning_Auto_Parking/releases/download/1.0/Neighborhood4.zip)  environment from the release ( modified from [swri-robotics/Neighborhood](https://github.com/swri-robotics/Neighborhood) )
 
 2. unzip the environment
 
