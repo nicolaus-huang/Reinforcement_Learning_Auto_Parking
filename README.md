@@ -4,6 +4,10 @@ This is a simple implementation of auto-parking using **reinforcement learning**
 
 We have deployed our model on **2 different environments** to validate its superiority.
 
+## Webots Environment
+
+See this method in [Webots ](https://github.com/Huang-Shijie-SDUWH/Reinforcement_Learning_Auto_Parking/tree/master/Webots) directory
+
 ## Airsim Environment
 
 ### Quick Start
@@ -67,10 +71,6 @@ We finally made a stable auto-parking model after about 4000 episodes training, 
 There are possibilities using CNN and a backward camera on the car to train a more robust model, but because the limited time we didn't try that, but we can tell that it can be easily perform by just setting the DQN policy to `"CNNpolicy"` 
 
 > This code is modified from [AirSim/PythonClient/reinforcement_learning at main · microsoft/AirSim](https://github.com/Microsoft/AirSim/tree/main/PythonClient/reinforcement_learning)
-
-## Webots Environment
-
-See this method in [Webots ](https://github.com/Huang-Shijie-SDUWH/Reinforcement_Learning_Auto_Parking/tree/master/Webots) directory
 
 ## Real World Deployment
 
