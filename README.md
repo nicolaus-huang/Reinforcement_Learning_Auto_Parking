@@ -20,6 +20,8 @@ We have deployed our model on **2 different environments** to validate its super
    python eval.py
    ```
 
+> This environment is manually controllable, you can impress F10 to see the control panel
+
 ### Training
 
 follow the instructions upon, train the model by
@@ -58,7 +60,7 @@ there a 10 directions each performs as an action, and we set a stop action which
 
 ![image-20220808190143412](https://s2.loli.net/2022/08/08/oibEIgYzO2vR6aV.png)
 
-We finally made a stable auto-parking model after about 4000 epochs training, countless fails, 15 days figuring out problems and adjusting the hyper parameters using the **relative** distance and orientation.
+We finally made a stable auto-parking model after about 4000 episodes training, countless fails, 15 days figuring out problems and adjusting the hyper parameters using the **relative** distance and orientation.
 
 ### Extend
 
