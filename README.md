@@ -46,7 +46,7 @@ where the rewards are calculated as follows respectively
 
 ![image-20220808191658029](https://s2.loli.net/2022/08/08/5NOvxcZRfakndIQ.png)
 
-> And we add some special reward when something bad happened such as collision and drive out of our bounded area or total time out
+> Some of the functions are modified from [Train PPO Agent for Automatic Parking Valet - MATLAB & Simulink](https://www.mathworks.com/help/releases/R2020b/reinforcement-learning/ug/train-ppo-agent-for-automatic-parking-valet.html), and we added some special reward when something bad happened such as collision and drive out of our bounded area or total time out
 
 The reward function can be viewed like this
 
