@@ -42,7 +42,7 @@ We train an agent by setting a reward function by
 
 ![image-20220808191559048](https://s2.loli.net/2022/08/08/lo46cOyn8LjbPUs.png)
 
-where the reward are calculated as follows respectively
+where the rewards are calculated as follows respectively
 
 ![image-20220808191658029](https://s2.loli.net/2022/08/08/5NOvxcZRfakndIQ.png)
 
