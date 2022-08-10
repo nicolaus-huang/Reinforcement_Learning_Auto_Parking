@@ -1,0 +1,14 @@
+.\worlds\autopark.wbt即可运行
+.\controllers\rl_controller\训练记录
+python版本:3.8
+gym==0.21.0
+numpy==1.22.3
+stable_baselines3==1.6.0
+torch==1.12.0
+Observation:
+1.小车位置 (x,y) 坐标 
+2.小车朝向 orientation 
+3.小车的 16 个距离传感器读数.
+4.可以加入任意传感器,如摄像机,雷达.
+没加入的原因是环境简单,CNN无法提取充足有效信息,减少过拟合,加快运算.
+且现实中自动泊车也有不加摄像头.
