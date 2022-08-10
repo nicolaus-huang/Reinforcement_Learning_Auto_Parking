@@ -4,10 +4,6 @@ This is a simple implementation of auto-parking using **reinforcement learning**
 
 We have deployed our model on **2 different environments** to validate its superiority.
 
-## Webots Environment
-
-See this method in [Webots ](https://github.com/Huang-Shijie-SDUWH/Reinforcement_Learning_Auto_Parking/tree/master/Webots) directory
-
 ## Airsim Environment
 
 ### Quick Start
