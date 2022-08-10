@@ -1,7 +1,0 @@
-.\worlds\autopark.wbt即可运行
-.\controllers\rl_controller\训练记录
-python版本:3.8
-gym==0.21.0
-numpy==1.22.3
-stable_baselines3==1.6.0
-torch==1.12.0
