@@ -1,0 +1,133 @@
+#VRML_SIM R2022a utf8
+WorldInfo {
+}
+Viewpoint {
+  orientation -0.45858398446911197 -0.09041095512816963 0.8840399246534317 3.232286386865068
+  position 3.6740490188343187 -1.0448334197327631 11.43805925294049
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  rotation 0 1 0 0
+  floorSize 18 10
+  wallHeight 1
+}
+DEF PAT Pioneer3at {
+  hidden position_0_0 1717.4724930902207
+  hidden position_0_1 1699.61602787336
+  hidden position_0_2 1717.4709208978852
+  hidden position_0_3 1699.6153968105577
+  hidden linearVelocity_0 -3.272639647273623e-07 8.533938009167096e-08 -6.591093291977553e-08
+  hidden angularVelocity_0 -4.122712816651898e-07 -1.585667060194565e-06 -6.124511076230026e-09
+  hidden rotation_6 0.5566538730061602 -0.5566460212867628 0.6166698246654027 4.24675944331673
+  hidden rotation_7 -0.15540676966689485 0.15540848553350445 0.9755495572065437 4.68762631749869
+  hidden rotation_8 0.5562983580929541 -0.5562905078635879 0.6173111109027238 4.247688380149564
+  hidden rotation_9 -0.15575196065562746 0.15575367258041778 0.9754394498018006 4.687513477571272
+  translation -2.003914780173115 -1.9992165410002927 0.03763768469987466
+  rotation -0.043454943118629304 0.008835247673223062 0.9990163193447389 3.13986756684001
+  name "car"
+  controller "rl_controller"
+  supervisor TRUE
+  extensionSlot [
+    GPS {
+    }
+    TouchSensor {
+      translation 0 -0.2 0.15
+      scale 1.8 1.8 1.8
+      children [
+        DEF sensorshape Shape {
+          geometry Box {
+            size 0.25 0.1 0.08
+          }
+        }
+      ]
+      name "touchsensor4"
+      boundingObject USE sensorshape
+    }
+    TouchSensor {
+      translation 0.23 0 0.15
+      scale 1.8 1.8 1.8
+      children [
+        DEF sensorshape Shape {
+          geometry Box {
+            size 0.05 0.1 0.08
+          }
+        }
+      ]
+      name "touchsensor1"
+      boundingObject USE sensorshape
+    }
+    TouchSensor {
+      translation 0 0.2 0.15
+      scale 1.8 1.8 1.8
+      children [
+        DEF sensorshape Shape {
+          geometry Box {
+            size 0.25 0.1 0.08
+          }
+        }
+      ]
+      name "touchsensor3"
+      boundingObject USE sensorshape
+    }
+    TouchSensor {
+      translation -0.23 0 0.15
+      rotation 0 1 0 0
+      scale 1.8 1.8 1.8
+      children [
+        DEF sensorshape Shape {
+          geometry Box {
+            size 0.05 0.1 0.08
+          }
+        }
+      ]
+      name "touchsensor2"
+      boundingObject USE sensorshape
+    }
+  ]
+}
+Solid {
+  translation 0 0 1
+  children [
+    Shape {
+      appearance PBRAppearance {
+      }
+      geometry DEF wall Box {
+        size 0.1 2 2
+      }
+    }
+  ]
+  name "wall1"
+  boundingObject USE wall
+}
+Solid {
+  translation 2 0 1
+  children [
+    Shape {
+      appearance PBRAppearance {
+      }
+      geometry DEF wall Box {
+        size 0.1 2 2
+      }
+    }
+  ]
+  name "wall3"
+  boundingObject USE wall
+}
+Solid {
+  translation 1 1 1
+  rotation 0 0 1 1.57
+  children [
+    Shape {
+      appearance PBRAppearance {
+      }
+      geometry DEF wall Box {
+        size 0.1 2 2
+      }
+    }
+  ]
+  name "wall2"
+  boundingObject USE wall
+}
