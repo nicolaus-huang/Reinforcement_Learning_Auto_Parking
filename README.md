@@ -72,6 +72,7 @@ There are possibilities using CNN and a backward camera on the car to train a mo
 ## Webots Environment
 ![car.jpg](https://s2.loli.net/2022/08/08/lhq6tCi5SfzdcNp.jpg)
 
+downlond Webots
 python==3.8
 gym==0.21.0
 numpy==1.22.3
@@ -94,23 +95,23 @@ We can simply add any sensors including camera,lidar to the car.The observation 
 
 ### reward:
 
-see function in .\Webots_parking\controllers\rl_controller\rl_controller.py  compute_reward
+see function in .\Webots\controllers\rl_controller\rl_controller.py  compute_reward
 
 ### environments and action code:
 
-.\Webots_parking\controllers\rl_controller\car_controller.py
+.\Webots\controllers\rl_controller\car_controller.py
 
 ### train code:
 
-.\Webots_parking\controllers\rl_controller\rl_controller.py
+.\Webots\controllers\rl_controller\rl_controller.py
 
-###algorithm:
+### algorithm:
 
 DQN
 
 ### training_logs:
 
-.\Webots_parking\controllers\rl_controller\训练记录
+.\Webots\controllers\rl_controller\训练记录
 
 ### result:
 
