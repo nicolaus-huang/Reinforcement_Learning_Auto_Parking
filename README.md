@@ -128,8 +128,7 @@ DQN
 ![logs](https://s2.loli.net/2022/08/08/mUc8kNtgsLxKnoR.png)
 
 ### reference
->[使用Webots进行强化学习]
-(https://blog.csdn.net/weixin_42454034/article/details/112115752)
+[using Webots in reinforcement learning](https://blog.csdn.net/weixin_42454034/article/details/112115752)
 
 
 
