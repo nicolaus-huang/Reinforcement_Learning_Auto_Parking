@@ -78,12 +78,11 @@ numpy==1.22.3
 stable_baselines3==1.6.0
 torch==1.12.0
 
-
 configure python interpreter in 
 
 ![9SQ56K8N_~Z_4I72RL1Y4EW.png](https://s2.loli.net/2022/08/08/EOfteQJKZNPxIS9.png)
 
-###observation:
+### observation:
 
 1、position
 
@@ -93,13 +92,13 @@ configure python interpreter in
 
 We can simply add any sensors including camera,lidar to the car.The observation we choose is based on the reality.
 
-###reward:
+### reward:
 
-see function in .\car\controllers\rl_controller\rl_controller.py  compute_reward
+see function in .\Webots_parking\controllers\rl_controller\rl_controller.py  compute_reward
 
-###environments and action code:
+### environments and action code:
 
-.\car\controllers\rl_controller\car_controller.py
+.\Webots_parking\controllers\rl_controller\car_controller.py
 
 ### train code:
 
@@ -109,11 +108,11 @@ see function in .\car\controllers\rl_controller\rl_controller.py  compute_reward
 
 DQN
 
-###training_logs:
+### training_logs:
 
 .\Webots_parking\controllers\rl_controller\训练记录
 
-###result:
+### result:
 
 ![park_pose](https://s2.loli.net/2022/08/08/Xfh5UTtqwIomk3a.png)
 
