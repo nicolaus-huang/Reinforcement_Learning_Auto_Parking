@@ -69,69 +69,6 @@ There are possibilities using CNN and a backward camera on the car to train a mo
 > This code is modified from [AirSim/PythonClient/reinforcement_learning at main · microsoft/AirSim](https://github.com/Microsoft/AirSim/tree/main/PythonClient/reinforcement_learning)
 
 
-## Webots Environment
-![car.jpg](https://s2.loli.net/2022/08/08/lhq6tCi5SfzdcNp.jpg)
-
-
-
-First download [Webots](https://www.cyberbotics.com/)
-
-> python==3.8
-> gym==0.21.0
-> numpy==1.22.3
-> stable_baselines3==1.6.0
-> torch==1.12.0
-
-configure python interpreter in 
-
-![9SQ56K8N_~Z_4I72RL1Y4EW.png](https://s2.loli.net/2022/08/08/EOfteQJKZNPxIS9.png)
-
-### observation:
-
-- position
-
-- orientation
-
-- distance_sensor_value
-
-
-We can simply add any sensors including camera,lidar to the car. The observation we choose is based on the reality.
-
-### reward:
-
-see function in `.\Webots\controllers\rl_controller\rl_controller.py`  compute_reward
-
-### environments and action code:
-
-```
-.\Webots\controllers\rl_controller\car_controller.py
-```
-
-### train code:
-
-```
-.\Webots\controllers\rl_controller\rl_controller.py
-```
-
-### algorithm:
-
-DQN
-
-### training_logs:
-
-`.\Webots\controllers\rl_controller\训练记录`
-
-### result:
-
-![park_pose](https://s2.loli.net/2022/08/08/Xfh5UTtqwIomk3a.png)
-
-![logs](https://s2.loli.net/2022/08/08/mUc8kNtgsLxKnoR.png)
-
-### reference
-[using Webots in reinforcement learning](https://blog.csdn.net/weixin_42454034/article/details/112115752)
-
-
-
 ## Real World Deployment
 
 ![image-20220808184519145](https://s2.loli.net/2022/08/08/gdAkiKp8xYNf1zU.png)
